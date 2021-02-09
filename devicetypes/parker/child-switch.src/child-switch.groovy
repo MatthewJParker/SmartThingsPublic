@@ -21,7 +21,8 @@
  * 
  */
 metadata {
-	definition (name: "Child Switch", namespace: "parker", author: "Matt", ocfDeviceType: "oic.d.switch", vid: "generic-light-switch") {
+    definition (name: "child switch", namespace: "parker", author: "Matt") {
+	//definition (name: "Child Switch", namespace: "parker", author: "Matt") { // , ocfDeviceType: "oic.d.switch", vid: "generic-light-switch") {
 		capability "Switch"
 //		capability "Actuator"
 	}

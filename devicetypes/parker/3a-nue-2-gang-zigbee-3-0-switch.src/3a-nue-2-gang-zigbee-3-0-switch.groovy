@@ -162,7 +162,7 @@ private Map parseReportAttributeMessage(String description) {
 
 def sendData(switchno, command) {
 	log.debug "sendData()"
-    log.debug "${switchno},${command}"
+    log.debug "${device.deviceNetworkId} ${switchno},${command}"
     if (command == "off")
 	    "st cmd 0x${device.deviceNetworkId} 0x${switchno} 0x0006 0x0 {}" 
     else if (command == "on")
